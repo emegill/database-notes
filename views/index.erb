@@ -2,10 +2,24 @@
 
  
 <div><%= post.title %> </div>
-<div><%= post.category%> </div>
+<div><%= post.category %> </div>
 <div><%= post.content %> </div>	
 
 <% end %>
+
+<div>
+	<form action="/@search_result" method="GET">
+		<select name="category">
+		 <option value="Top 10">top 10</option>
+		 <option value="Travel">travel</option>
+		 <option value="Food">food</option>
+		 <input type="submit">
+		</select>
+	</form>
+</div>
+
+
+
 
 <div>
 	<form action="/new_post" method="post">
@@ -15,3 +29,13 @@
 		<input type="submit">
 	</form>
 </div>
+
+
+
+
+
+
+
+
+
+

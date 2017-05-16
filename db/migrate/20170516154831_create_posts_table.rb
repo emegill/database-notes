@@ -5,7 +5,9 @@ class CreatePostsTable < ActiveRecord::Migration[5.1]
   		t.string :title
   		t.string :category
   		t.text :content
+  		t.search :search
   	end
 
+  	
   end
 end

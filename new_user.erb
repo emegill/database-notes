@@ -1,0 +1,20 @@
+<% @users.each do |user| %>
+
+<div><%= user.userName %> </div>
+<div><%= user.password %> </div>
+<div><%= user.comment %> </div>
+
+<% end %>
+
+<div><%= 
+
+
+<div>
+	<form action="/new_user" method="get">
+		<input type="text" name="userName" placeholder="userName">
+		<input type="text" name="password" placeholder="password">
+		<input type="text" name="comment" placeholder="comments">
+
+		<input type="submit">
+	</form>
+</div>

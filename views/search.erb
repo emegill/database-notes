@@ -1,0 +1,17 @@
+<% @search_result.each do |post| %>
+
+ 
+<div><%= post.title %> </div>
+<div><%= post.category %> </div>
+<div><%= post.content %> </div>	
+
+<% end %>
+
+
+<div>
+	<form action="/search" method="get">
+		<input type="text" name="search" placeholder="search for something">
+		
+	</form>
+
+</div>
