@@ -1,0 +1,17 @@
+<% @posts.each do |post| %>
+
+ 
+<div><%= post.title %> </div>
+<div><%= post.category%> </div>
+<div><%= post.content %> </div>	
+
+<% end %>
+
+<div>
+	<form action="/new_post" method="post">
+		<input type="text" name="title" placeholder="title">
+		<input type="text" name="category" placeholder="category">
+		<input type="text" name="content" placeholder="content">
+		<input type="submit">
+	</form>
+</div>
